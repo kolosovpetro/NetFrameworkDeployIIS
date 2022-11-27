@@ -31,7 +31,7 @@ jobs:
         run: nuget restore ${{ env.SOLUTION_FILE_PATH }}
 
       - name: Build and Publish Web App
-        run: msbuild ${{ env.SOLUTION_FILE_PATH }} /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+        run: msbuild ${{ env.SOLUTION_FILE_PATH }} /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:AutoParameterizationWebConfigConnectionStrings=false
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
