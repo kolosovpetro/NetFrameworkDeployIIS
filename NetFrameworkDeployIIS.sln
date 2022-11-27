@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetFrameworkDeployIIS", "NetFrameworkDeployIIS\NetFrameworkDeployIIS.csproj", "{A586008D-5D43-4ADC-A115-E3A13EA16741}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{2428D17A-9696-4C59-B021-1CC3A74A06EC}"
@@ -9,10 +12,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{2428D17A
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "enable_iis_windows", "enable_iis_windows", "{F32E1C72-C30E-4DE2-8A9B-E16CA04649AD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{794146C5-447C-4BD3-A44D-191D477E170A}"
 	ProjectSection(SolutionItems) = preProject
-		enable_iis_windows\01_iis_activate.png = enable_iis_windows\01_iis_activate.png
-		enable_iis_windows\02_iis_check_localhost.PNG = enable_iis_windows\02_iis_check_localhost.PNG
+		img\01_iis_activate.png = img\01_iis_activate.png
+		img\02_iis_check_localhost.PNG = img\02_iis_check_localhost.PNG
+		img\03_iis_create_site.png = img\03_iis_create_site.png
+		img\04_published_site_check.PNG = img\04_published_site_check.PNG
 	EndProjectSection
 EndProject
 Global
@@ -21,9 +26,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A586008D-5D43-4ADC-A115-E3A13EA16741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A586008D-5D43-4ADC-A115-E3A13EA16741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A586008D-5D43-4ADC-A115-E3A13EA16741}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{A586008D-5D43-4ADC-A115-E3A13EA16741}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{A586008D-5D43-4ADC-A115-E3A13EA16741}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A586008D-5D43-4ADC-A115-E3A13EA16741}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5953FBA7-9050-4E74-B576-71347EE75B77}
 	EndGlobalSection
 EndGlobal
