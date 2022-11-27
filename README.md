@@ -1,5 +1,7 @@
 ## NET Framework IIS Deploy
 
+[![Build Web App](https://github.com/kolosovpetro/NetFrameworkDeployIIS/actions/workflows/build_and_publish.yml/badge.svg)](https://github.com/kolosovpetro/NetFrameworkDeployIIS/actions/workflows/build_and_publish.yml)
+
 ### Enable IIS on Windows
 
 - Enable IIS using Control Panel
