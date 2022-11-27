@@ -20,6 +20,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{794146C5-447
 		img\04_published_site_check.PNG = img\04_published_site_check.PNG
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{AE585F7A-8926-48C6-BFCF-594BAA4948E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{D470A3DB-0755-431A-BAC1-B36A84926C12}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build_and_publish.yml = .github\workflows\build_and_publish.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +43,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5953FBA7-9050-4E74-B576-71347EE75B77}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D470A3DB-0755-431A-BAC1-B36A84926C12} = {AE585F7A-8926-48C6-BFCF-594BAA4948E9}
 	EndGlobalSection
 EndGlobal
