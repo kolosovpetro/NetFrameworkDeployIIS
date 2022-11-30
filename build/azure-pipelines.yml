@@ -15,7 +15,7 @@ variables:
   - name: BuildPlatform
     value: 'AnyCPU'
   - name: Solution
-    value: 'NNetFrameworkDeployIIS/NetFrameworkDeployIIS.csproj'
+    value: 'NetFrameworkDeployIIS/NetFrameworkDeployIIS.csproj'
 
 
 stages:
