@@ -38,5 +38,5 @@ steps:
       WebSiteName: '$(IISSiteName)'
       Package: '$(Pipeline.Workspace)/drop/NetFrameworkDeployIIS.zip'
       TakeAppOfflineFlag: true
-      SetParametersFile: '$(Pipeline.Workspace)/drop/NetFrameworkDeployIIS.SetParameters.xml'
-      XmlVariableSubstitution: true
+#      SetParametersFile: '$(Pipeline.Workspace)/drop/NetFrameworkDeployIIS.SetParameters.xml'
+#      XmlVariableSubstitution: true
