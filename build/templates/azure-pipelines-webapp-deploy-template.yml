@@ -21,7 +21,8 @@ steps:
       DotNetVersionForWebsite: 'v4.0'
       PipeLineModeForWebsite: 'Integrated'
       AddBinding: true
-      Bindings: '{"bindings":[{"protocol":"http","ipAddress":"All Unassigned","port":"8080","hostname":"$(IISWebSiteName)"}]}'
+      Bindings: '{"bindings":[{"protocol":"http","ipAddress":"All Unassigned","port":"8080","hostname":""}]}'
+#      Bindings: '{"bindings":[{"protocol":"http","ipAddress":"All Unassigned","port":"8080","hostname":"$(IISWebSiteName)"}]}'
 #      Bindings: '{"bindings":[{"protocol":"https","ipAddress":"All Unassigned","port":"443","hostname":"$(IISSiteHostName)","sslThumbprint":"$(certificate_thumbprint)","sniFlag":false}]}'
       CreateOrUpdateAppPoolForWebsite: true
       AppPoolNameForWebsite: '$(IISSiteName)'
