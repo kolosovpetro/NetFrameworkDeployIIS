@@ -20,3 +20,7 @@
 ### Video how to deploy
 
 - https://www.youtube.com/watch?v=PPaqVyBkwMk
+
+### How to enable IIS on Windows server
+
+- https://thesecmaster.com/step-by-step-procedure-to-configure-iis-on-the-windows-server/
