@@ -27,11 +27,11 @@ steps:
       CreateOrUpdateAppPoolForWebsite: true
       AppPoolNameForWebsite: '$(IISSiteName)'
 
-#  - task: replacetokens@3
-#    displayName: 'Replace tokens in **/*.SetParameters.xml'
-#    inputs:
-#      targetFiles: '$(Pipeline.Workspace)/drop/TEKenable.NHIS.Web.SetParameters.xml'
-#      escapeType: none
+  - task: replacetokens@3
+    displayName: 'Replace tokens in **/*.SetParameters.xml'
+    inputs:
+      targetFiles: '$(Pipeline.Workspace)/drop/NetFrameworkDeployIIS.SetParameters.xml'
+      escapeType: none
 
   - task: IISWebAppDeploymentOnMachineGroup@0
     displayName: 'IIS Web App Deploy'
@@ -39,5 +39,5 @@ steps:
       WebSiteName: '$(IISSiteName)'
       Package: '$(Pipeline.Workspace)/drop/NetFrameworkDeployIIS.zip'
       TakeAppOfflineFlag: true
-#      SetParametersFile: '$(Pipeline.Workspace)/drop/NetFrameworkDeployIIS.SetParameters.xml'
-#      XmlVariableSubstitution: true
+      SetParametersFile: '$(Pipeline.Workspace)/drop/NetFrameworkDeployIIS.SetParameters.xml'
+      XmlVariableSubstitution: true

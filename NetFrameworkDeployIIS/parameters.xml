@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+    <!-- Connection strings -->
+    <parameter name="Connection String -DefaultConnection"
+               description="Specify DefaultConnection connection string"
+               defaultValue="#{ConnectionStrings.DefaultConnection}#">
+        <parameterEntry kind="XmlFile" scope="Web.config"
+                        match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString"/>
+    </parameter>
+</parameters>
