@@ -11,6 +11,8 @@ steps:
     displayName: 'GitVersion Execute'
     inputs:
       updateAssemblyInfo: true
+      useConfigFile: true
+      configFilePath: 'GitVersion.yml'
 
   - bash: echo $Action$BuildVersion
     displayName: 'Set Build Version Number'
