@@ -1,13 +1,6 @@
-trigger:
-  batch: true
-  branches:
-    include:
-      - develop
+trigger: none
 
-pr:
-  branches:
-    include:
-      - '*'
+pr: none
 
 variables:
   - name: BuildConfiguration
