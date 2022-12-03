@@ -11,7 +11,6 @@ steps:
     displayName: 'GitVersion Execute'
     inputs:
       updateAssemblyInfo: true
-      updateAssemblyInfoFilename: 'NetFrameworkDeployIIS/NetFrameworkDeployIIS/Properties/AssemblyInfo.cs'
       useConfigFile: true
       configFilePath: 'GitVersion.yml'
 
