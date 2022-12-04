@@ -1,0 +1,23 @@
+trigger: none
+
+pr: none
+
+variables:
+  - name: BuildConfiguration
+    value: 'Release'
+  - name: BuildPlatform
+    value: 'AnyCPU'
+  - name: Solution
+    value: 'NetFrameworkDeployIIS/NetFrameworkDeployIIS.csproj'
+
+
+stages:
+  - stage: 'Build_Test_Package'
+    displayName: 'Build/Test/Package'
+    jobs:
+      - job: 'Build'
+        displayName: 'Build and test'
+        pool:
+          vmImage: 'windows-latest'
+        steps:
+          - template: templates/azure-pipelines-build-template.yml
