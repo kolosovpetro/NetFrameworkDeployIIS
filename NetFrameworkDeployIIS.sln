@@ -10,7 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{2428D17A
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		README.md = README.md
-		GitVersion.yml = GitVersion.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{794146C5-447C-4BD3-A44D-191D477E170A}"
