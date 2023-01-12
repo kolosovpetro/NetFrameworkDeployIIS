@@ -9,6 +9,12 @@ variables:
     value: 'AnyCPU'
   - name: Solution
     value: 'NetFrameworkDeployIIS/NetFrameworkDeployIIS.csproj'
+  - name: IISSiteName
+    value: 'iisdeploy'
+  - name: IISPhysicalPath
+    value: '%SystemDrive%\inetpub\wwwroot\$(IISSiteName)'
+  - name: ConnectionStrings.DefaultConnection
+    value: 'Server=localhost,1433;Database=MANGO_PROD;User Id=sa;Password=x2yiJt!Fs;TrustServerCertificate=true;'
 
 
 stages:
@@ -32,8 +38,6 @@ stages:
         environment:
           name: dev
           resourceType: VirtualMachine
-        variables:
-          - group: DEPLOY_VARS_DEV
 
         strategy:
           runOnce:
