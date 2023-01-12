@@ -19,8 +19,10 @@
 
 ### Video how to deploy
 
-- https://www.youtube.com/watch?v=PPaqVyBkwMk
+- [How to deploy locally IIS](https://www.youtube.com/watch?v=PPaqVyBkwMk)
+- [How to expose IP to internet](https://www.youtube.com/watch?v=e2Mx-y2eXeQ)
 
 ### How to enable IIS on Windows server
 
-- https://thesecmaster.com/step-by-step-procedure-to-configure-iis-on-the-windows-server/
+- [How to enable IIS](https://thesecmaster.com/step-by-step-procedure-to-configure-iis-on-the-windows-server/)
+- [Required features to RUN (!!!)](https://stackoverflow.com/a/33622291)
