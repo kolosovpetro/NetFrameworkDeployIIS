@@ -33,12 +33,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{5804E837
 		build\azure-pipelines-iis-deploy.yml = build\azure-pipelines-iis-deploy.yml
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{D057BB04-C845-4F4D-85FD-86171125082D}"
-	ProjectSection(SolutionItems) = preProject
-		build\templates\azure-pipelines-build-template.yml = build\templates\azure-pipelines-build-template.yml
-		build\templates\azure-pipelines-webapp-deploy-template.yml = build\templates\azure-pipelines-webapp-deploy-template.yml
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +52,5 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D470A3DB-0755-431A-BAC1-B36A84926C12} = {AE585F7A-8926-48C6-BFCF-594BAA4948E9}
-		{D057BB04-C845-4F4D-85FD-86171125082D} = {5804E837-0972-4AA1-B44F-66934187B009}
 	EndGlobalSection
 EndGlobal
