@@ -2,18 +2,13 @@
 
 [![Build Web App](https://github.com/kolosovpetro/NetFrameworkDeployIIS/actions/workflows/build_and_publish.yml/badge.svg)](https://github.com/kolosovpetro/NetFrameworkDeployIIS/actions/workflows/build_and_publish.yml)
 
-### Enable IIS on Windows
-
-- Enable IIS using Control Panel
-  ![01_enable_iis_windows](./img/01_iis_activate.png)
-- Verify how IIS works on localhost
-  ![02_verify_iis](./img/02_iis_check_localhost.PNG)
-
 ### Deployment process
 
 - Create a new IIS website
   ![03_create_new_website](./img/03_iis_create_site.png)
 - Publish project to the website physical path
+- Open port in network security group
+- Open port in Windows Firewall
 - Validate the website
   ![04_validate_website](./img/04_published_site_check.PNG)
 
@@ -26,3 +21,4 @@
 
 - [How to enable IIS](https://thesecmaster.com/step-by-step-procedure-to-configure-iis-on-the-windows-server/)
 - [Required features to RUN (!!!)](https://stackoverflow.com/a/33622291)
+- [How to Enable SSL on IIS using CertBot](https://medium.com/@nvbach91/how-to-create-lets-encrypt-s-free-wildcard-ssl-certificates-for-windows-server-iis-web-servers-aa01d939e0ad)
