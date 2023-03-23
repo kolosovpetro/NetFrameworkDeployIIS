@@ -15,8 +15,10 @@ variables:
     value: '%SystemDrive%\inetpub\wwwroot\$(IISSiteName)'
   - name: ConnectionStrings.DefaultConnection
     value: 'Server=localhost,1433;Database=MANGO_PROD;User Id=sa;Password=x2yiJt!Fs;TrustServerCertificate=true;'
-
-
+  - name: CertThumbprint
+    value: 'a2f8cf7530768f203c5290ffaac4b15f20626285'
+  - name: HostName
+    value: 'mangomessenger.company'
 stages:
   - stage: 'Build_Test_Package'
     displayName: 'Build/Test/Package'
@@ -113,10 +115,18 @@ stages:
                             {
                               "protocol":"http",
                               "ipAddress":"*",
-                              "hostname":"",
+                              "hostname":"$(HostName)",
                               "port":"80",
                               "sslThumbprint":"",
                               "sniFlag":false
+                            },
+                            {
+                              "protocol":"https",
+                              "ipAddress":"*",
+                              "hostname":"$(HostName)",
+                              "port":"443",
+                              "sslThumbprint":"$(CertThumbprint)",
+                              "sniFlag":true
                             }
                           ]
                       }
