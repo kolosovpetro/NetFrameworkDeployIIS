@@ -77,7 +77,7 @@ stages:
               PathtoPublish: '$(Build.ArtifactStagingDirectory)'
               ArtifactName: 'drop'
               publishLocation: 'Container'
-            
+
   - stage: 'dev'
     displayName: 'WebApp Deploy DEV'
     dependsOn: Build_Test_Package
@@ -107,7 +107,19 @@ stages:
                     DotNetVersionForWebsite: 'v4.0'
                     PipeLineModeForWebsite: 'Integrated'
                     AddBinding: true
-                    Bindings: '{"bindings":[{"protocol":"http","ipAddress":"All Unassigned","port":"80","hostname":""}]}'
+                    Bindings: |
+                      {
+                          bindings: [
+                            {
+                              "protocol":"http",
+                              "ipAddress":"*",
+                              "hostname":"",
+                              "port":"80",
+                              "sslThumbprint":"",
+                              "sniFlag":false
+                            }
+                          ]
+                      }
                     CreateOrUpdateAppPoolForWebsite: true
                     AppPoolNameForWebsite: '$(IISSiteName)'
 
