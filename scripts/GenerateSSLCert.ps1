@@ -1,4 +1,4 @@
-$domain = "dev.test";
+$domain = "devtest.team";
 $email = "kolosovp94@gmail.com";
 $server = "https://acme-v02.api.letsencrypt.org/directory";
 
