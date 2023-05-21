@@ -97,14 +97,6 @@ stages:
               steps:
                 - download: current
                   artifact: drop
-                  
-#                - task: PowerShell@2
-#                  displayName: 'Delete SSL Cert If Exists'
-#                  inputs:
-#                    targetType: 'inline'
-#                    script: |
-#                      netsh http delete sslcert hostnameport=mangomessenger.company:443
-#                  continueOnError: true
 
                 - task: IISWebAppManagementOnMachineGroup@0
                   displayName: 'IIS Web App Manage'
