@@ -14,11 +14,11 @@ variables:
   - name: IISPhysicalPath
     value: '%SystemDrive%\inetpub\wwwroot\$(IISSiteName)'
   - name: ConnectionStrings.DefaultConnection
-    value: 'Server=localhost,1433;Database=MANGO_PROD;User Id=sa;Password=x2yiJt!Fs;TrustServerCertificate=true;'
+    value: 'Server=localhost,1433;Database=PROD;User Id=sa;Password=URossiiTriPuti;TrustServerCertificate=true;'
   - name: CertThumbprint
     value: 'a2f8cf7530768f203c5290ffaac4b15f20626285'
   - name: HostName
-    value: 'mangomessenger.company'
+    value: 'disketovlalka.dev.test'
 stages:
   - stage: 'Build_Test_Package'
     displayName: 'Build/Test/Package'
@@ -98,13 +98,13 @@ stages:
                 - download: current
                   artifact: drop
                   
-                - task: PowerShell@2
-                  displayName: 'Delete SSL Cert If Exists'
-                  inputs:
-                    targetType: 'inline'
-                    script: |
-                      netsh http delete sslcert hostnameport=mangomessenger.company:443
-                  continueOnError: true
+#                - task: PowerShell@2
+#                  displayName: 'Delete SSL Cert If Exists'
+#                  inputs:
+#                    targetType: 'inline'
+#                    script: |
+#                      netsh http delete sslcert hostnameport=mangomessenger.company:443
+#                  continueOnError: true
 
                 - task: IISWebAppManagementOnMachineGroup@0
                   displayName: 'IIS Web App Manage'
@@ -134,7 +134,7 @@ stages:
                               "hostname":"$(HostName)",
                               "port":"443",
                               "sslThumbprint":"$(CertThumbprint)",
-                              "sniFlag":true
+                              "sniFlag":false
                             }
                           ]
                       }

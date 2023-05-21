@@ -34,6 +34,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{5804E837
 		build\azure-pipelines-iis-deploy.yml = build\azure-pipelines-iis-deploy.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{7C42022F-5DB1-4BE5-B006-20B42817C1F0}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\GenerateSSLCert.ps1 = scripts\GenerateSSLCert.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
