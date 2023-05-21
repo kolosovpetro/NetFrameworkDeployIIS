@@ -16,7 +16,7 @@ variables:
   - name: ConnectionStrings.DefaultConnection
     value: 'Server=localhost,1433;Database=PROD;User Id=sa;Password=URossiiTriPuti;TrustServerCertificate=true;'
   - name: CertThumbprint
-    value: 'a2f8cf7530768f203c5290ffaac4b15f20626285'
+    value: '1341dad76f24c1bd07d0135bcc9156fc64df554d'
   - name: HostName
     value: 'disketovlalka.devtest.team'
 stages:
